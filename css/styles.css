@@ -23,6 +23,18 @@ header h1 {
     font-size: 2.5em;
 }
 
+.content h1{
+    text-align: center;
+}
+
+.alpha {
+    display: flex;
+    justify-content: center; /* Horizontaal centreren */
+    align-items: center; /* Verticaal centreren */
+    margin: 20px 0; /* Optioneel, afstand boven en onder */
+    text-align: center; /* Zorg ervoor dat tekst in de div ook gecentreerd wordt */
+}
+
 nav {
     background-color: #0056b3;
     padding: 10px;
