@@ -1,94 +1,60 @@
-/* Algemene instellingen */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
+/* Hero sectie */
+.hero {
     background-color: #f9f9f9;
-    color: #333;
+    padding: 40px 20px;
     text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
-header {
-    background-color: #007BFF;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
+.hero h1 {
+    font-size: 2em;
+    color: #007BFF;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-/* Navigatie */
-nav {
-    background-color: #0056b3;
-    padding: 10px;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+/* Dienstenlijst */
+.services {
     display: flex;
     justify-content: center;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Secties */
-section {
-    padding: 40px 20px;
-    max-width: 900px;
-    margin: 0 auto;
-    background: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-section h2 {
-    text-align: center;
-    color: #007BFF;
-    margin-bottom: 20px;
-    font-size: 1.8em;
-}
-
-section p {
-    text-align: center;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #0056b3;
-    color: white;
+    gap: 20px;
     margin-top: 20px;
 }
 
-/* Links */
-a {
-    color: #007BFF;
+.service-item {
+    background-color: #f0f8ff;
+    border: 2px solid #007BFF;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.service-item h3 {
+    color: #0056b3;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 0.9em;
+    color: #333;
+}
+
+.service-item a {
     text-decoration: none;
+    color: inherit;
+    display: block;
 }
 
-a:hover {
-    text-decoration: underline;
+.service-item a:hover h3 {
+    color: #007BFF;
 }
-
 
