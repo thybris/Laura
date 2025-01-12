@@ -1,96 +1,92 @@
+/* Algemene stijl */
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
-/* Navigatie */
+/* Navigatiebalk */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #fff;
+    background-color: #ffffff;
+    padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-header .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #008CBA;
-}
-
-nav ul {
-    display: flex;
+header nav ul {
     list-style: none;
+    display: flex;
+    justify-content: flex-end;
     margin: 0;
     padding: 0;
 }
 
-nav ul li {
-    margin-left: 20px;
+header nav ul li {
+    margin: 0 15px;
 }
 
-nav ul li a {
+header nav ul li a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
+    transition: color 0.3s;
 }
 
-nav ul li a:hover {
-    color: #008CBA;
+header nav ul li a:hover {
+    color: #007BFF;
 }
 
-/* Hero-afbeelding */
-.hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f5f5f5;
-    padding: 50px;
+/* Hoofdtitel */
+h1 {
     text-align: center;
+    color: #007BFF;
+    margin: 20px 0;
+    font-size: 2.5rem;
 }
 
-.hero h1 {
-    color: #008CBA;
-}
-
-.buttons {
-    margin-top: 20px;
-}
-
-.buttons a {
-    text-decoration: none;
-    color: #008CBA;
-    font-weight: bold;
-    border: 1px solid #008CBA;
-    padding: 10px 20px;
-    margin: 0 10px;
-    border-radius: 5px;
-}
-
-.buttons a:hover {
-    background-color: #008CBA;
-    color: #fff;
-}
-
-/* Content */
-.content {
-    padding: 50px;
+/* Algemene tekst */
+p {
     text-align: center;
+    margin: 20px 0;
 }
 
-.content h2 {
+/* Tarieven sectie */
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 1.8rem;
     color: #333;
+    margin-bottom: 15px;
 }
 
-.content p {
-    margin-top: 20px;
-    line-height: 1.6;
-    color: #666;
+section ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
 }
 
-.content strong {
-    color: #008CBA;
+section ul li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+/* Footer link */
+a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0056b3;
 }
