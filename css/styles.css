@@ -6,9 +6,12 @@ body {
     padding: 0;
     background-color: #f9f9f9;
     color: #333;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Zorgt dat de body altijd minimaal de schermhoogte is */
 }
 
+/* Navigatiebalk */
 header {
     background-color: #007BFF;
     color: white;
@@ -21,7 +24,6 @@ header h1 {
     font-size: 2.5em;
 }
 
-/* Navigatie */
 nav {
     background-color: #0056b3;
     padding: 10px;
@@ -110,7 +112,12 @@ nav ul li a:hover {
     color: #007BFF;
 }
 
-/* Secties */
+/* Content */
+.content {
+    flex: 1; /* Zorgt dat de content de beschikbare ruimte inneemt */
+    padding: 20px;
+}
+
 section {
     padding: 40px 20px;
     max-width: 900px;
@@ -135,11 +142,11 @@ section p {
 
 /* Footer */
 footer {
-    text-align: center;
-    padding: 10px 0;
     background-color: #0056b3;
     color: white;
-    margin-top: 20px;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto; /* Zorgt dat de footer naar de onderkant van de pagina wordt geduwd */
 }
 
 /* Links */
