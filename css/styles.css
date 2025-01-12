@@ -35,6 +35,18 @@ header h1 {
     text-align: center; /* Zorg ervoor dat tekst in de div ook gecentreerd wordt */
 }
 
+ul {
+    list-style-position: inside; /* Plaatst de bollen binnen de inhoud */
+    margin: 0; /* Verwijdert de standaardmarge van de lijst */
+    padding: 0 20px; /* Zorgt voor een kleine inspringing */
+    line-height: 1.6; /* Zorgt voor een prettige verticale ruimte tussen regels */
+}
+
+li {
+    margin: 5px 0; /* Optionele kleine marge tussen lijstitems */
+}
+
+
 nav {
     background-color: #0056b3;
     padding: 10px;
