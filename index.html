@@ -8,10 +8,19 @@
 </head>
 <body>
    <!-- Navigatiebalk -->
-   <header>
-        <div class="header-content">
-            <h1><div class="site-title">Alphabet Soup Translations</div></h1>
+    <header>
+        <div class="header-container">
+            <h1 class="site-title">Alphabet Soup Translations</h1>
+
+            <!-- 🔤 Taalwisselaar -->
+            <div class="language-switcher">
+                <a href="#" id="lang-nl">NL</a> |
+                <a href="#" id="lang-en">EN</a> |
+                <a href="#" id="lang-fr">FR</a> |
+                <a href="#" id="lang-es">ES</a>
+            </div>
         </div>
+
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -19,9 +28,10 @@
                 <li><a href="./banner/tarieven.html">Tarieven</a></li>
                 <li><a href="./banner/contact.html">Contact</a></li>
                 <li><a href="./banner/overons.html">Over ons</a></li>
-            </ul>
+                </ul>
         </nav>
     </header>
+
 
     <!-- Hero sectie -->
     <div class="hero">
@@ -67,13 +77,15 @@
     </div>
 
     <div class="alpha">
-        <img src="../img/alpha.png" alt="banner">
+        <img src="/img/alpha.png" alt="banner">
     </div>
 
     <!-- Footer -->
     <footer>
         <p>&copy; 2025 Alphabet Soup Translations. Alle rechten voorbehouden.</p>
     </footer>
+    <script src="/js/taalwisselaar.js"></script>
+
 </body>
 </html>
 
