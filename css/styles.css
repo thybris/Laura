@@ -15,9 +15,8 @@ body {
 header {
     background-color: #f9f9f9;
     color: #0056b3;
-    padding: 0; /* GEEN horizontale padding, zodat nav de volle breedte kan innemen */
+    padding: 0; /* Geen horizontale padding zodat nav de volle breedte kan innemen */
     width: 100%;
-    /* display: flex; flex-direction: column; align-items: center; */
 }
 
 /* Container voor titel en taalwisselaar */
@@ -28,7 +27,7 @@ header {
     justify-content: center;        /* Centreert de inhoud, dus de titel komt in het midden */
     width: 100%;
     max-width: 1200px;
-    padding: 10px 20px;            /* Hier verplaatsen we de padding heen */
+    padding: 10px 20px;             /* Padding hier in plaats van in de header */
     margin: 0 auto;
 }
 
@@ -67,7 +66,7 @@ header {
 /* Navigatiebalk (blauwe balk) */
 nav {
     background-color: #0041a8;
-    width: 100%;       /* Zorgt dat de blauwe balk de hele breedte vult */
+    width: 100%;       /* Vult de hele breedte van de pagina */
     display: flex;
     justify-content: center;
     padding: 10px 0;
@@ -198,7 +197,48 @@ a:hover {
     text-decoration: underline;
 }
 
-.alpha {
-    text-align: center; /* Centreert alles binnen de .alpha-div, inclusief de img */
+/* Responsive styling */
+@media (max-width: 768px) {
+    /* Header & Taalwisselaar */
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    .language-switcher {
+        position: static;
+        margin-top: 10px;
+    }
+
+    /* Navigatiebalk */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    /* Hero & Diensten */
+    .hero {
+        padding: 20px 10px;
+    }
+    .services {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .service-item {
+        width: 90%;
+    }
 }
 
+@media (max-width: 480px) {
+    .site-title,
+    .content h1 {
+        font-size: 1.5em;
+    }
+    nav ul li a {
+        padding: 8px 10px;
+        font-size: 0.9em;
+    }
+}
